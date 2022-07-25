@@ -1,12 +1,29 @@
 .App {
-  margin: 30px auto;
+  margin: 0 auto;
+}
+
+.App .container {
   max-width: 960px;
 }
 
+.App header {
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #272142;
+}
+
 .App .App-logo {
-  display: block;
-  margin: 10px auto;
-  max-width: 100px;
+  display: inline-block;
+  margin: 10px 0 10px 30px;
+  max-width: 60px;
 }
 
 .App .App-footer {
@@ -16,9 +33,21 @@
 }
 
 body {
-  background-color: #f9f8fe;
+  background: linear-gradient(
+    109.6deg,
+    rgb(246, 242, 254) 11.2%,
+    rgb(245, 226, 245) 91.1%
+  );
 }
 
-a {
+.App-footer a {
   color: #9771f3;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.App-footer a:hover {
+  cursor: pointer;
+  color: #9771f3;
+  text-shadow: 0.5px 0.5px 5px rgb(0, 0, 0, 0.2);
 }
